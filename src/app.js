@@ -85,6 +85,9 @@ slideImage.src = imageUrls[currentImageIndex]
 // subscribe to events
 showPrveBtn.addEventListener('click', onShowPrevBtnClick)
 showNextBtn.addEventListener('click', onShowNextBtnClick)
+showNextBtn.addEventListener("load", function(event) {
+    console.log("test!!!!");
+});
 
 // functions difinitions
 function onShowPrevBtnClick() {
